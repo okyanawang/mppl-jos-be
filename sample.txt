@@ -1,0 +1,39 @@
+[Food]
+id
+name
+price
+qty
+desc_a
+desc_b
+cal
+url_thumb
+url_vid
+
+[ingred]
+id
+food_id*
+stc
+
+[step]
+id
+food_id*
+stc
+
+3|x9DizIRM1l6le0rMQbp98cqyJZz0F5dhTcry1cBL
+
+name : sate jamur
+price : 20000
+qty : 10
+desc_a : Sate jamur, gurih manis berpadu untuk mengisi waktu sore sembari menikmati teh hangat
+desc_b : Sate atau satai adalah makanan yang terbuat dari daging yang dipotong kecil-kecil dan ditusuk sedemikian rupa dengan tusukan lidi tulang daun kelapa atau bambu, kemudian dipanggang menggunakan bara arang kayu. Sate disajikan dengan berbagai macam bumbu yang bergantung pada variasi resep sate. Sesuai namanya, sate jamur menggunakan bahan dasar jamur sebagai paengganti daging
+cal : 416
+url_thumb : https://shumi.sgp1.cdn.digitaloceanspaces.com/items/nendoroid-hatsune-miku-lonely-sekai-ver/thumbnail/nendoroid-hatsune-miku-lonely-sekai-ver.jpg
+url_vid : <iframe width="560" height="315" src="https://www.youtube.com/embed/BPcDXFKZPLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+name : krengsengan
+price : 15000
+qty : 10
+desc_a : masakan yang biasanya terbuat dari daging kambing dan pentol
+desc_b : masakan yang biasanya terbuat dari daging kambing yang dipotong kecil (2X2 cm), yang diberi bumbu tumisan bawang merah, bawang putih, ketumbar, merica, pala, (dihaluskan terlebih dahulu) ditambah dengan kecap manis pada waktu memasak, sehingga tidak banyak berkuah dan berwarna coklat tua, ada juga yang dicampur dengan bagian jeroan kambing. Masakan yang khas menggunakan daging kambing ini biasanya dijumpai bersama gulai kambing, dan tongseng yang juga menggunakan daging kambing. Masakan ini umumnya dikenal di Jawa Timur, Jawa Tengah dan DI Yogyakarta.
+cal : 314
+url_vid : <iframe width="560" height="315" src="https://www.youtube.com/embed/82U2_ltcZ60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
