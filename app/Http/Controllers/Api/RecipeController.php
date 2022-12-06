@@ -36,8 +36,6 @@ class RecipeController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:155',
-            'price' => 'required|integer',
-            'qty' => 'required|integer',
             'desc_a' => 'required',
             'desc_b' => 'required',
             'cal' => 'required|integer',
@@ -55,8 +53,6 @@ class RecipeController extends Controller
 
         $recipe = Recipe::create([
             'name' => $request->get('name'),
-            'price' => $request->get('price'),
-            'qty' => $request->get('qty'),
             'desc_a' => $request->get('desc_a'),
             'desc_b' => $request->get('desc_b'),
             'cal' => $request->get('cal'),
@@ -97,8 +93,6 @@ class RecipeController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:155',
-            'price' => 'required|integer',
-            'qty' => 'required|integer',
             'desc_a' => 'required',
             'desc_b' => 'required',
             'cal' => 'required|integer',
@@ -116,8 +110,6 @@ class RecipeController extends Controller
 
         $recipe->update([
             'name' => $request->get('name'),
-            'price' => $request->get('price'),
-            'qty' => $request->get('qty'),
             'desc_a' => $request->get('desc_a'),
             'desc_b' => $request->get('desc_b'),
             'cal' => $request->get('cal'),

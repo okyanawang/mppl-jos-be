@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('price');
-            $table->integer('qty');
+            $table->boolean('is_avail');
             $table->text('desc_a');
             $table->text('desc_b');
             $table->integer('cal');

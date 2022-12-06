@@ -18,7 +18,7 @@ class FoodResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'price' => $this->price,
-            'qty' => $this->qty,
+            'is_avail' => $this->is_avail,
             'desc_a' => $this->desc_a,
             'desc_b' => $this->desc_b,
             'cal' => $this->cal,
