@@ -39,7 +39,18 @@ class DatabaseSeeder extends Seeder
             'desc_a' => 'nasi goreng a',
             'desc_b' => 'nasi goreng b',
             'cal' => '350',
-            'url_thumb' => 'link foto',
+            'url_thumb' => 'https://res.cloudinary.com/daya9gqs5/image/upload/v1670308695/069244600_1585909700-fried-2509089_1920_nprxik.jpg',
+            'url_vid' => 'link video'
+        ]);
+
+        Food::factory()->create([
+            'name' => 'Sate Jamur',
+            'price' => '15000',
+            'qty' => '100',
+            'desc_a' => 'Sate Jamur A',
+            'desc_b' => 'Sate Jamur B',
+            'cal' => '200',
+            'url_thumb' => 'https://res.cloudinary.com/daya9gqs5/image/upload/v1670308937/download_2_p665dv.jpg',
             'url_vid' => 'link video'
         ]);
     }
