@@ -27,3 +27,4 @@ Route::middleware('auth:sanctum')->group(function () {
 });
 
 Route::resource('/foods', \App\Http\Controllers\Api\FoodController::class);
+Route::resource('/recipes', \App\Http\Controllers\Api\RecipeController::class);
