@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
-            $table->foreign('recipes_id')->references('id')->on('recipes');
-            $table->text('igrd');
+            $table->foreignId('recipe_id');
+            $table->string('ingredient');
             $table->timestamps();
         });
     }

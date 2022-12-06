@@ -16,4 +16,12 @@ class Recipe extends Model
         'url_thumb',
         'url_vid'
     ]; // tambahkan $fillable
+
+    public function ingredients(){
+        return $this->hasMany(Ingredient::class);
+    }
+
+    public function steps(){
+        return $this->hasMany(Step::class);
+    }
 }
