@@ -19,7 +19,7 @@ id
 food_id*
 stc
 
-2|dzWD4xHxKsueBdgf4iNABPZ4rT9aX9DLnPJXFTKD
+2|rTtJ6twt3avM6ZiEGsdrmdbOqjdkyW1bIDqbpJRV
 
 name : sate jamur
 price : 20000

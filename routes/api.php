@@ -29,4 +29,7 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::resource('/foods', \App\Http\Controllers\Api\FoodController::class);
 Route::resource('/recipes', \App\Http\Controllers\Api\RecipeController::class);
 Route::resource('/ingredients', \App\Http\Controllers\Api\IngredientController::class);
+Route::resource('/steps', \App\Http\Controllers\Api\StepController::class);
+
 Route::get('/ingredients/f/{id}', [\App\Http\Controllers\Api\IngredientController::class, 'findex']);
+Route::get('/steps/f/{id}', [\App\Http\Controllers\Api\StepController::class, 'findex']);

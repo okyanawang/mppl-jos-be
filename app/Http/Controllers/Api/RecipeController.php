@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\IngredientResource;
+use App\Http\Resources\StepResource;
 use App\Http\Resources\RecipeResource;
+use App\Models\Ingredient;
+use App\Models\Step;
 use App\Models\Recipe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -60,8 +64,24 @@ class RecipeController extends Controller
             'url_vid' => $request->get('url_vid')
         ]);
 
+        $igrds = $request->get('igrds'); // Bagian Front-end, kirim data array ingredient ke sini
+        foreach ($igrds as $igrd) {
+            $ing_crt[] = Ingredient::create([
+                'recipe_id' => $recipe->id,
+                'ingredient' => $igrd
+            ]);
+        }
+
+        $stps = $request->get('stps'); // Bagian Front-end, kirim data array step ke sini
+        foreach ($stps as $stp) {
+            $stp_crt[] = Step::create([
+                'recipe_id' => $recipe->id,
+                'step' => $stp
+            ]);
+        }
+
         return response()->json([
-            'data' => new RecipeResource($recipe),
+            'data' => [new RecipeResource($recipe), new IngredientResource($ing_crt), new StepResource($stp_crt)],
             'message' => 'Recipe added successfully.',
             'success' => true
         ]);
