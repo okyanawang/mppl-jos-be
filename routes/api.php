@@ -23,5 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [\App\Http\Controllers\Api\AuthController::class, 'logout']);
-    Route::resource('/foods', \App\Http\Controllers\Api\FoodController::class);
+    // Route::resource('/foods', \App\Http\Controllers\Api\FoodController::class);
 });
+
+Route::resource('/foods', \App\Http\Controllers\Api\FoodController::class);
